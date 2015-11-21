@@ -1,0 +1,39 @@
+.cleared {
+	float: none !important;
+	clear: both !important;
+}
+
+.title-container {
+	float: left;
+}
+
+.media-link {
+	display: block;
+	float: right;
+	color: #c0c0c0;
+	font-size: 30px;
+	margin-right: 10px;
+	margin-bottom: -10px;
+}
+
+.media-link:hover {
+	color: #777777;
+}
+
+.media-link-container {
+	float: right;
+	margin-top: 20px;
+}
+
+@media (max-width: 480px) and (min-width: 335px) {
+	.media-link:not(.github-link):not(.email-link) {
+		display: none;
+	}
+}
+
+
+@media (max-width: 335px){
+	.media-link {
+		display: none;
+	}
+}
